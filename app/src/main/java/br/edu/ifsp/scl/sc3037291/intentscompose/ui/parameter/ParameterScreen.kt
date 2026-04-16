@@ -51,3 +51,5 @@ fun ParameterScreen(
         }
     }
 }
+
+annotation class ParameterScreen
