@@ -21,6 +21,18 @@ fun MainScreen(
                     IconButton(onClick = { menuExpanded = true }) {
                         Icon(Icons.Default.MoreVert, contentDescription = "Menu")
                     }
+                    DropdownMenu(
+                        expanded = menuExpanded,
+                        onDismissRequest = { menuExpanded = false }
+                    ) {
+                        DropdownMenuItem(
+                            text = { Text("Definir parâmetro") },
+                            onClick = {
+                                menuExpanded = false
+                                onSetParameter()
+                            }
+                        )
+                    }
                 }
             )
         }
