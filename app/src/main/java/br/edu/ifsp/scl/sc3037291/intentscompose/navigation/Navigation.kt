@@ -1,4 +1,4 @@
-package br.edu.ifsp.scl.sc3037291.intentscompose
+package br.edu.ifsp.scl.sc3037291.intentscompose.navigation
 
 sealed class Screen(val route: String) {
     object Main : Screen("main")
